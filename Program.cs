@@ -3,8 +3,7 @@ using WeatherApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("WeatherApiDatabase") 
-    ?? Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+var connectionString = builder.Configuration.GetConnectionString("WeatherApiDatabase");
 
 if (!string.IsNullOrEmpty(connectionString))
 {
