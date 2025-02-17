@@ -36,8 +36,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
 // Ensure DB is created & apply migrations
 using (var scope = app.Services.CreateScope())
 {
